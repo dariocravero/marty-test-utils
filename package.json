@@ -4,9 +4,10 @@
   "description": "marty.js test utils",
   "main": "index.js",
   "scripts": {
-    "test": "make test",
-    "compile": "babel --only `find . -name '*.es' -type f -not -path './node_modules/*'` -d . .",
-    "prepublish": "npm run compile"
+    "test": ".bin/test",
+    "compile": "babel --only `find . -name '*.es6' -type f -not -path './node_modules/*'` -d . .",
+    "prepublish": "npm run compile",
+    "postpublish": "find . -name '*.js' -type f -not -path './node_modules/*' -exec rm {} \\;"
   },
   "repository": {
     "type": "git",
