@@ -2,6 +2,18 @@
 
 A bunch of helpers to aid [marty](https//martyjs.org) testing.
 
+
+## mockStore
+
+Use it to fake a Store.
+
+```js
+mockStore('MyStore', {
+  method1: spy()
+});
+
+```
+
 ## onDispatchedAction
 
 Use it to test actions triggered through a dispatcher inside `ActionCreators` and `Queries`.
