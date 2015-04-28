@@ -2,6 +2,7 @@
 
 A bunch of helpers to aid [marty](https//martyjs.org) testing.
 
+[![Build Status](https://travis-ci.org/dariocravero/marty-test-utils.svg?branch=master)](https://travis-ci.org/dariocravero/marty-test-utils)
 
 ## mockStore
 
