@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": ".bin/test",
-    "compile": "babel --only `find . -name '*.es6' -type f -not -path './node_modules/*'` -d . .",
-    "prepublish": "npm run compile",
-    "postpublish": "find . -name '*.js' -type f -not -path './node_modules/*' -exec rm {} \\;"
+    "prepublish": ".bin/compile",
+    "postpublish": ".bin/clean"
   },
   "repository": {
     "type": "git",
