@@ -12,7 +12,15 @@ Use it to fake a Store.
 mockStore('MyStore', {
   method1: spy()
 });
+```
 
+## mockComponent
+
+Use it to fake a React component.
+
+```js
+mockComponent('Test'); // => <div></div>
+mockComponent('Test', 'span'); // => <span></span>
 ```
 
 ## onDispatchedAction
